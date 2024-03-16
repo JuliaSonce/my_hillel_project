@@ -9,4 +9,3 @@ function grades(points) {
     return 'You can do better';
   }
 }
-console.log(grades(95));
