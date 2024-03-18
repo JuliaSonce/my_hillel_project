@@ -6,13 +6,10 @@ function convertCurrency(sum, currencyCode) {
   switch (currencyCode) {
     case 'EUR':
       return sum * currencyEuroUsd;
-      break;
     case 'UAH':
       return sum * currencyUahUsd;
-      break;
     case 'GBP':
       return sum * currencyGbpUsd;
-      break;
     default:
       return 'Error';
   }
@@ -25,30 +22,23 @@ function getDayOfWeek(num) {
   switch (num) {
     case 1:
       return 'Monday';
-      break;
     case 2:
       return 'Tuesday';
-      break;
     case 3:
       return 'Wednesday';
-      break;
     case 4:
       return 'Thursday';
-      break;
     case 5:
       return 'Friday';
-      break;
     case 6:
       return 'Saturday';
-      break;
     case 7:
       return 'Sunday';
-      break;
     default:
       return 'Error';
   }
 }
-console.log(getDayOfWeek(3));
+console.log(getDayOfWeek(5));
 
 // task 3
 function fibonacci(n) {
