@@ -104,7 +104,7 @@ console.log(result14); //result false
  */
 
 //let result15 = 0 || '0' && 1;
-console.log(result15); //result 1
+//console.log(result15); //result 1
 /* 
 1. '0' && 1 is 1 because  we return  truthy operator  
 2. 0 || 1 is 1 because it  truthy operato
