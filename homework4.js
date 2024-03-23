@@ -13,3 +13,31 @@ function customIsNaN(obj) {
 
   return true;
 }
+
+// Task 2
+function checkProbabilityTheory(count) {
+  let evenNumbersCount = 0;
+  let oddNumbersCount = 0;
+  for (let i = 0; i < count; i++) {
+    let randomNum = Math.floor(Math.random() * (1001 - 100)) + 100;
+    if (randomNum % 2 == 0) {
+      evenNumbersCount++;
+    } else {
+      oddNumbersCount++;
+    }
+  }
+  let evenPercentage = (evenNumbersCount * 100) / count;
+  let oddPercentage = (oddNumbersCount * 100) / count;
+  console.log(
+    'The amount of generated numbers: ' +
+      count +
+      '\nOdd amount: ' +
+      oddNumbersCount +
+      '\nEven amount: ' +
+      evenNumbersCount +
+      '\nRatio: ' +
+      evenPercentage +
+      '%' +
+      oddPercentage
+  );
+}
