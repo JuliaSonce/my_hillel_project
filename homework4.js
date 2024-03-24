@@ -41,3 +41,14 @@ function checkProbabilityTheory(count) {
       oddPercentage
   );
 }
+//Task 3
+function sumOfNumbers() {
+  let res = 0;
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 !== 0) {
+      res = res + i;
+    }
+  }
+  console.log('The sum of numbers will be: ' + res);
+}
+sumOfNumbers();
